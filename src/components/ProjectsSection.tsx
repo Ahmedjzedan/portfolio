@@ -1,4 +1,5 @@
 import { ShoppingCart, Lock } from "lucide-react";
+import Image from "next/image";
 
 export default function ProjectsSection() {
   return (
@@ -12,14 +13,19 @@ export default function ProjectsSection() {
         <article className="group relative p-6 md:p-8 rounded-2xl border border-slate-200 bg-slate-50/50 hover:border-amber-200 transition-all">
           <div className="absolute -inset-4 bg-gradient-to-r from-amber-100 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="bg-slate-100 rounded-lg aspect-video flex items-center justify-center border border-slate-200 shadow-inner overflow-hidden">
-              <div className="text-center">
-                <ShoppingCart className="w-12 h-12 mx-auto mb-2 text-slate-400" />
-                <span className="text-slate-400 font-mono text-xs">
-                  Tech Hub
-                </span>
-              </div>
-            </div>
+            <a
+              href="https://techhubstore-tau.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-slate-100 rounded-lg aspect-video flex items-center justify-center border border-slate-200 shadow-inner overflow-hidden relative group/image"
+            >
+              <Image
+                src="/projects/tech-hub.png"
+                alt="Tech Hub"
+                fill
+                className="object-cover transition-transform duration-500 group-hover/image:scale-105"
+              />
+            </a>
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-slate-900 group-hover:text-amber-700 transition-colors">
                 Tech Hub
@@ -60,14 +66,19 @@ export default function ProjectsSection() {
         <article className="group relative p-6 md:p-8 rounded-2xl border border-slate-200 bg-slate-50/50 hover:border-amber-200 transition-all">
           <div className="absolute -inset-4 bg-gradient-to-r from-amber-100 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="order-1 md:order-2 bg-slate-100 rounded-lg aspect-video flex items-center justify-center border border-slate-200 shadow-inner overflow-hidden">
-              <div className="text-center">
-                <Lock className="w-12 h-12 mx-auto mb-2 text-slate-400" />
-                <span className="text-slate-400 font-mono text-xs">
-                  Mnemonic Lock
-                </span>
-              </div>
-            </div>
+            <a
+              href="https://mnemonic-lock.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="order-1 md:order-2 bg-slate-100 rounded-lg aspect-video flex items-center justify-center border border-slate-200 shadow-inner overflow-hidden relative group/image"
+            >
+              <Image
+                src="/projects/mnemonic-lock.png"
+                alt="Mnemonic Lock"
+                fill
+                className="object-cover transition-transform duration-500 group-hover/image:scale-105"
+              />
+            </a>
             <div className="order-2 md:order-1 space-y-4">
               <h3 className="text-2xl font-bold text-slate-900 group-hover:text-amber-700 transition-colors">
                 Mnemonic Lock
