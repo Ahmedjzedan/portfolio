@@ -48,6 +48,21 @@ export default function SkillsSection() {
             <span className="px-3 py-1 bg-white border border-slate-200 rounded text-sm font-semibold text-slate-700 shadow-sm">
               Zod
             </span>
+            <span className="px-3 py-1 bg-white border border-slate-200 rounded text-sm font-semibold text-slate-700 shadow-sm">
+              Vercel
+            </span>
+            <span className="px-3 py-1 bg-white border border-slate-200 rounded text-sm font-semibold text-slate-700 shadow-sm">
+              Figma
+            </span>
+            <span className="px-3 py-1 bg-white border border-slate-200 rounded text-sm font-semibold text-slate-700 shadow-sm">
+              Git/GitHub
+            </span>
+            <span className="px-3 py-1 bg-white border border-slate-200 rounded text-sm font-semibold text-slate-700 shadow-sm">
+              VSCode
+            </span>
+            <span className="px-3 py-1 bg-white border border-slate-200 rounded text-sm font-semibold text-slate-700 shadow-sm">
+              Antigravity
+            </span>
           </div>
         </div>
       </div>
